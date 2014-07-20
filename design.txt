@@ -1,0 +1,32 @@
+High level design
+Game logic related classes:
+1 Player : public Sprite
+enum status{
+	none,
+	running,
+	jumping,
+	sliding,
+	dashing,
+	hitting,
+	blinking,
+	diying
+}playerStatus;
+	functions:
+		functions to accept control(jump, slide, hit, use skill)
+		functions to update status, include the action end callbacks, scheduled updates etc.(we need a state machine to handle the status change)
+		functions to interact with the environment
+2 Terrain and block
+The most complex thing, we need to design the terrain by using an already-write-done-script, to decide put which block at which position.
+enum {
+	
+}BlockTypes;
+3 items
+
+4 Monsters
+
+5 Bullets
+
+6 Boss
+
+7 Game Layer
+
